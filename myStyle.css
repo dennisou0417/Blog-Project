@@ -1,0 +1,124 @@
+body{
+    background-color: #D3D3D3;
+}
+.jumbotron{
+    background-image: url(basketball.jpg);
+    background-size: cover;
+}
+
+.intro{
+    background-color:#DCDCDC;
+    width: 35%;
+    padding: 25px;
+    height: auto;
+    opacity: 0.6;
+}
+
+.intro p{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    word-wrap:break-word;
+}
+
+.title{
+    background-color:#DCDCDC;
+    padding: 25px;
+    width: 35%;
+    opacity: 0.9;
+    font-family: 'Bebas Neue', cursive;
+    word-wrap:break-word;
+}
+
+.content{
+    text-align: center;
+    font-weight: bold;
+}
+
+.nbaLogo{
+    width: 200px;
+    height: 400px;
+}
+
+.sneakerLogo{
+    width: 300px;
+    height: 350px;
+}
+
+.center{
+    text-align: center;
+}
+
+.center h4{
+    font-weight: bold;
+}
+
+.padding{
+    margin-top: 25px;
+}
+
+.bold{
+    font-weight:500;
+}
+
+.aboutHeading{
+    background-color: #181818;
+    color:#E8E8E8;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.me{
+    border-radius: 300px;
+    float:left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-height:350px;
+    height:auto;
+    width:auto;
+}
+
+.aboutMe{
+    padding: 30px;
+}
+
+.clearfix{
+    overflow: hidden;
+}
+
+footer{
+    background-color: #E8E8E8;
+    text-align: center;
+    position:relative;
+    bottom:0;
+    padding:10px;
+    width:100%;
+    word-wrap: break-word;
+}
+
+.contactHeading{
+    background-color: #181818;
+    color:#E8E8E8;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.sidebar{
+    background-color: orange;
+    z-index:999;
+    padding-top:10px;
+    padding-bottom:10px;
+    position:fixed;
+    right:0;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%)
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    padding:10px;
+}
+
