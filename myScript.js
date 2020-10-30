@@ -54,27 +54,30 @@ function removeHide(){
 }
 
 function newPost(){
-    var post = document.getElementById('post');
     var article = document.createElement('article');
     article.className = "thumbnail articlePost";
+    var post = document.getElementById('post');
     post.appendChild(article);
     var h1 = document.createElement('h1');
     var titleNode = document.createTextNode(articleTitle);
     h1.appendChild(titleNode);
     article.appendChild(h1);
-    // var p = document.createElement('p');
-    // var detailNode = document.createTextNode(articleDetails);
-    // p.appendChild(detailNode);
-    // var button = document.createElement('button');
-    // button.className = "thumbsUp";
-    // var i = document.createElement('i');
-    // i.className = "fa fa-thumbs-up";
-    // i.setAttribute = ("aria-hidden", "true");
-    // button.appendChild(i);
-    // var readMore = document.createElement('button');
-    // var read = document.createTextNode("Read More");
-    // readMore.className = "readMore";
-    // readMore.appendChild(read);
+    var p = document.createElement('p');
+    var detailNode = document.createTextNode(articleDetails);
+    p.appendChild(detailNode);
+    article.appendChild(p);
+    var button = document.createElement('button');
+    button.className = "thumbsUp";
+    article.appendChild(button);
+    var i = document.createElement('i');
+    i.className = "fa fa-thumbs-up";
+    i.setAttribute = ("aria-hidden", "true");
+    button.appendChild(i);
+    var readMore = document.createElement('button');
+    var read = document.createTextNode("Read More");
+    readMore.className = "readMore";
+    readMore.appendChild(read);
+    article.appendChild(readMore);
     // var hr = document.createElement('hr');
 }
 
