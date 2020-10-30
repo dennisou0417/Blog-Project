@@ -61,8 +61,12 @@ function clearForm(){
     articleContent = "";
 }
 
-function removeHide(){
-    form.classList.remove("hide");
+function display(){
+    if(form.classList == "hide"){
+        form.classList.remove("hide");
+    }else{
+        form.classList.add("hide");
+    }
 }
 
 function newPost(){
