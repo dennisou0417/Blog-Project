@@ -38,24 +38,24 @@
         <!-- <i class="fa fa-plus-square-o" aria-hidden="true"></i> NEW POST -->
       </button>
 
-      <form name="postForm" onsubmit="return validatePost() & newPost()" method="post" class="hide">
+      <div id="postForm" class="hide">
         <h2 class="formHeader">Start up your own article by filling out the form below.</h2>
   
         <div class="row">
           <label>Article Title <span class="error">*Required</span></label>
-          <input type="text" name="title">
+          <input type="text" name="title" id="title">
           <div class="error" id="titleErr"></div>
         </div>
   
         <div class="row">
           <label>Details <span class="error">*Required</span></label>
-          <input type="text" name="details">
+          <input type="text" name="details" id="details">
           <div class="error" id="detailsErr"></div>
         </div>
   
         <div class="row">
           <label>Content <span class="error">*Required</span></label>
-          <textarea placeholder="Enter Your Content" name="content"></textarea>
+          <textarea placeholder="Enter Your Content" name="content" id="content"></textarea>
           <div class="error" id="contentErr"></div>
         </div>
 
@@ -65,10 +65,10 @@
         </div>
   
         <div class="row">
-          <input type="submit" value="Submit">
+          <button class = "submit" onclick = "return valNew()">Submit</button>
         </div>
   
-      </form>
+      </div>
 
         <div class="blogContainer container-fluid h-100">
           <div class="center col-md-6 offset-md-3" id="post">

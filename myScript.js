@@ -2,14 +2,22 @@ function printError(element, msg){
     document.getElementById(element).innerHTML = msg;
 }
 
+
+var form = document.getElementById("postForm");
 var articleTitle;
 var articleDetails;
 var articleContent;
 
+function valNew(){
+    validatePost();
+    newPost();
+    form.classList.add("hide");
+}
+
 function validatePost(){
-    var title = document.postForm.title.value;
-    var details = document.postForm.details.value;
-    var content = document.postForm.content.value;
+    var title = document.getElementById('title').value;
+    var details = document.getElementById('details').value;
+    var content = document.getElementById('content').value;
 
     var titleErr = detailsErr = contentErr = true;
 
@@ -45,11 +53,15 @@ function validatePost(){
         articleContent = content;
         alert('You\'ve submitted the form...');
     }
+}
 
+function clearForm(){
+    articleTitle = "";
+    articleDetails = "";
+    articleContent = "";
 }
 
 function removeHide(){
-    var form = document.querySelector("form");
     form.classList.remove("hide");
 }
 
@@ -78,7 +90,8 @@ function newPost(){
     readMore.className = "readMore";
     readMore.appendChild(read);
     article.appendChild(readMore);
-    // var hr = document.createElement('hr');
+    var hr = document.createElement('hr');
+    article.appendChild(hr);
 }
 
 function validateForm(){

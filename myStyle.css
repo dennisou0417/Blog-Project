@@ -118,6 +118,27 @@ form {
     border-radius: 5px;
 }
 
+#postForm{
+    max-width: 650px;
+    width: auto;
+    background: #E8E8E8;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 50px;
+    border-radius: 5px;
+}
+
+.submit{
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 .formHeader{
     margin-bottom: 20px;
     text-align: center;
