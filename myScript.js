@@ -2,6 +2,10 @@ function printError(element, msg){
     document.getElementById(element).innerHTML = msg;
 }
 
+var articleTitle;
+var articleDetails;
+var articleContent;
+
 function validatePost(){
     var title = document.postForm.title.value;
     var details = document.postForm.details.value;
@@ -36,8 +40,40 @@ function validatePost(){
     if(titleErr || detailsErr || contentErr == true){
         return false;
     }else{
+        articleTitle = title;
+        articleDetails = details;
+        articleContent = content;
         alert('You\'ve submitted the form...');
     }
+
+}
+
+function newPost(){
+    var post = document.getElementById('post');
+    var article = document.createElement('article');
+    article.className = "thumbnail articlePost";
+    post.appendChild(article);
+    // var link = document.createElement('a');
+    // link.href = "";
+    // article.appendChild(link);
+    var h1 = document.createElement('h1');
+    var titleNode = document.createTextNode(articleTitle);
+    article.appendChild(h1);
+    h1.appendChild(titleNode);
+    var p = document.createElement('p');
+    var detailNode = document.createTextNode(articleDetails);
+    p.appendChild(detailNode);
+    var button = document.createElement('button');
+    button.className = "thumbsUp";
+    var i = document.createElement('i');
+    i.className = "fa fa-thumbs-up";
+    i.setAttribute = ("aria-hidden", "true");
+    button.appendChild(i);
+    var readMore = document.createElement('button');
+    var read = document.createTextNode("Read More");
+    readMore.className = "readMore";
+    readMore.appendChild(read);
+    var hr = document.createElement('hr');
 }
 
 function validateForm(){
@@ -98,3 +134,4 @@ function validateForm(){
         alert('You\'ve submitted the form...');
     }
 }
+
