@@ -33,44 +33,74 @@
     
     <div class="mainContainer container-fluid">
 
-      <a href="form.html" class="plusSquare fa fa-plus-square-o">
+      <button onclick="return removeHide()" class="plusSquare fa fa-plus-square-o">
         NEW POST
         <!-- <i class="fa fa-plus-square-o" aria-hidden="true"></i> NEW POST -->
-      </a>
+      </button>
 
-      <div class="blogContainer container-fluid h-100">
-          <div class="container-fluid">
-            <div class="center col-md-6 offset-md-3" id="post">
-              <article class="thumbnail articlePost">
-                <a href="">
-                  <img src="basketball.jpg" class="img-fluid">
-                </a>
-                <h1>ARTICLE TITLE</h1>
-                <p>Details</p>
-                <button class="thumbsUp">
-                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                </button>
-                <button class="readMore">
-                  Read More
-                </button>
-              </article>
-              <hr/>
-              <article class="thumbnail articlePost">
-                <a href="">
-                  <img src="sneakersOnCourt.jpg" class="img-fluid">
-                </a>
-                <h1>ARTICLE TITLE</h1>
-                <p>Details</p>
-                <button class="thumbsUp">
-                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                </button>
-                <button class="readMore">
-                  Read More
-                </button>
-              </article>
-            </div>
+      <form name="postForm" onsubmit="return validatePost() & newPost()" method="post" class="hide">
+        <h2 class="formHeader">Start up your own article by filling out the form below.</h2>
+  
+        <div class="row">
+          <label>Article Title <span class="error">*Required</span></label>
+          <input type="text" name="title">
+          <div class="error" id="titleErr"></div>
+        </div>
+  
+        <div class="row">
+          <label>Details <span class="error">*Required</span></label>
+          <input type="text" name="details">
+          <div class="error" id="detailsErr"></div>
+        </div>
+  
+        <div class="row">
+          <label>Content <span class="error">*Required</span></label>
+          <textarea placeholder="Enter Your Content" name="content"></textarea>
+          <div class="error" id="contentErr"></div>
+        </div>
+
+        <div class="row">
+            <label>Upload Image</label>
+            <input type="file" id="img" name="img" accept="image/*">
+        </div>
+  
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+  
+      </form>
+
+        <div class="blogContainer container-fluid h-100">
+          <div class="center col-md-6 offset-md-3" id="post">
+            <article class="thumbnail articlePost">
+              <a href="">
+                <img src="basketball.jpg" class="img-fluid">
+              </a>
+              <h1>ARTICLE TITLE</h1>
+              <p>Details</p>
+              <button class="thumbsUp">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+              </button>
+              <button class="readMore">
+                Read More
+              </button>
+            </article>
+            <hr/>
+            <article class="thumbnail articlePost">
+              <a href="">
+                <img src="sneakersOnCourt.jpg" class="img-fluid">
+              </a>
+              <h1>ARTICLE TITLE</h1>
+              <p>Details</p>
+              <button class="thumbsUp">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+              </button>
+              <button class="readMore">
+                Read More
+              </button>
+            </article>
           </div>
-      </div>
+        </div>     
     </div>
 
     <div class="sidebar">
