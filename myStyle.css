@@ -1,9 +1,17 @@
+
 body{
     background-color: #D3D3D3;
 }
-.jumbotron{
+.homeJumbo{
     background-image: url(basketball.jpg);
     background-size: cover;
+}
+
+.blogJumbo{
+    background-image: url(sneakersOnCourt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 .intro{
@@ -12,9 +20,6 @@ body{
     padding: 25px;
     height: auto;
     opacity: 0.6;
-}
-
-.intro p{
     font-weight: bold;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
@@ -25,7 +30,7 @@ body{
     background-color:#DCDCDC;
     padding: 25px;
     width: 35%;
-    opacity: 0.9;
+    opacity: 0.8;
     font-family: 'Bebas Neue', cursive;
     word-wrap:break-word;
 }
@@ -103,6 +108,124 @@ footer{
     word-wrap: break-word;
 }
 
+form {
+    max-width: 650px;
+    width: auto;
+    background: #E8E8E8;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 50px;
+    border-radius: 5px;
+}
+
+.formHeader{
+    margin-bottom: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+label i {
+    color: #999;
+    font-size: 80%;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 75%;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0165b6;
+}
+
+textarea{
+    height:350px;
+    width: 700px;
+}
+
+.mainContainer{
+    margin-bottom:35px;
+}
+
+.blogContainer{
+    background-color: #E8E8E8;
+}
+
+.plusSquare{
+    font-size: 25px;
+    padding: 20px;
+    margin:30px 30px 30px 30px;
+    background: #343a40;
+    border-color: #343a41;
+    box-shadow: 0 3px 0 #343a45;
+    color: #fff;
+}
+
+.plusSquare:hover{
+    text-decoration: none;
+    color:#fff;
+    background:#343a49;
+}
+
+.articlePost{
+    padding:30px;
+}
+
+.thumbnail{
+    max-width: 750px;
+}
+
+.thumbnail h1, p{
+    word-wrap: break-word;
+}
+
+.navbar-brand:hover{
+    padding: 5px;
+    background:#343a49;
+}
+
 .sidebar{
     background-color: orange;
     z-index:999;
@@ -121,4 +244,3 @@ footer{
     text-decoration:none;
     padding:10px;
 }
-
